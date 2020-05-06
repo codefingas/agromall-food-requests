@@ -1,12 +1,17 @@
 import React, { Component } from "react";
 import Application from "./components/app.js";
+import { BrowserRouter, Route } from "react-router-dom";
+import AdminLogin from "./components/admin/login";
 
 class App extends Component {
   render() {
     return (
-      <div className="content">
-        <Application />
-      </div>
+      <BrowserRouter>
+        <div className="content">
+          <Route exact path="/" component={Application} />
+          <Route path="/agro-admin" component={AdminLogin} />
+        </div>
+      </BrowserRouter>
     );
   }
 }
