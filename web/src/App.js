@@ -9,7 +9,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="content">
           <Route exact path="/" component={Application} />
-          <Route path="/agro-admin" component={AdminLogin} />
+          <Route path="/admin" component={AdminLogin} />
         </div>
       </BrowserRouter>
     );
