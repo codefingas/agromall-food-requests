@@ -1,32 +1,32 @@
 {
-  "name": "foodrequestsapi",
-  "version": "1.0.0",
-  "description": "apis to handle food requests built using Cloud Functions for Firebase",
-  "main": "index.js",
-  "repository": "https://github.com/codefingas/agromall-food-requests.git",
-  "author": "Ezekiel Saturday",
-  "license": "MIT",
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "yarn clean && yarn build && cd dist/functions &&  firebase use agromall-d819e; firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "watch": "babel --watch src --out-dir dist --source-maps inline --copy-files",
+    "build": "babel --presets=@babel/preset-env src --out-dir dist --source-maps inline --copy-files",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "clean": "rm -rf 'dist/functions'",
+    "watch-funcs": "babel --presets=@babel/preset-env  --verbose -w src/functions --out-dir dist/functions"
+  },
+  "engines": {
+    "node": "8"
+  },
   "dependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
-    "@babel/preset-es2015": "^7.0.0-beta.53",
-    "express": "^4.17.1",
     "firebase-admin": "^8.10.0",
     "firebase-functions": "^3.6.1"
   },
   "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1",
     "firebase-functions-test": "^0.2.0"
   },
-  "scripts": {
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "yarn shell",
-    "deploy": "babel --presets es2015 src -d dist/functions && firebase deploy --only functions",
-    "logs": "firebase functions:log",
-    "watch-funcs": "babel --verbose -w src/functions --out-dir dist/functions"
-  },
-  "engines": {
-    "node": "8"
-  }
+  "private": true
 }

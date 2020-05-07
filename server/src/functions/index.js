@@ -1,8 +1,13 @@
-const functions = require('firebase-functions');
+import * as functions from 'firebase-functions';
+import express from 'express';
 
-// Create and Deploy Your First Cloud Functions
-// https://firebase.google.com/docs/functions/write-firebase-functions
+const app = express();
 
-exports.helloWorld = functions.https.onRequest((request, response) => {
- response.send("Hello from Firebase!");
-});
+app.get("/", (req, res) => {
+    res.send("HELLO DORO");
+})
+
+// // Create and Deploy Your First Cloud Functions
+// // https://firebase.google.com/docs/functions/write-firebase-functions
+//
+exports.api = functions.https.onRequest(app);
