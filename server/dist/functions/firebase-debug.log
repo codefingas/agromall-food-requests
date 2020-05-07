@@ -1,261 +1,205 @@
-[debug] [2020-05-07T11:07:21.307Z] ----------------------------------------------------------------------
-[debug] [2020-05-07T11:07:21.309Z] Command:       /Users/ezekielsaturday/.nvm/versions/node/v8.16.2/bin/node /Users/ezekielsaturday/.nvm/versions/node/v8.16.2/bin/firebase emulators:start --only functions
-[debug] [2020-05-07T11:07:21.310Z] CLI Version:   8.2.0
-[debug] [2020-05-07T11:07:21.310Z] Platform:      darwin
-[debug] [2020-05-07T11:07:21.310Z] Node Version:  v8.16.2
-[debug] [2020-05-07T11:07:21.310Z] Time:          Thu May 07 2020 12:07:21 GMT+0100 (WAT)
-[debug] [2020-05-07T11:07:21.310Z] ----------------------------------------------------------------------
-[debug] [2020-05-07T11:07:21.310Z] 
-[debug] [2020-05-07T11:07:21.317Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-05-07T11:07:21.318Z] > authorizing via signed-in user
+[debug] [2020-05-07T16:52:41.149Z] ----------------------------------------------------------------------
+[debug] [2020-05-07T16:52:41.151Z] Command:       /Users/ezekielsaturday/.nvm/versions/node/v8.16.2/bin/node /Users/ezekielsaturday/.nvm/versions/node/v8.16.2/bin/firebase emulators:start --only functions
+[debug] [2020-05-07T16:52:41.151Z] CLI Version:   8.2.0
+[debug] [2020-05-07T16:52:41.151Z] Platform:      darwin
+[debug] [2020-05-07T16:52:41.151Z] Node Version:  v8.16.2
+[debug] [2020-05-07T16:52:41.152Z] Time:          Thu May 07 2020 17:52:41 GMT+0100 (WAT)
+[debug] [2020-05-07T16:52:41.152Z] ----------------------------------------------------------------------
+[debug] [2020-05-07T16:52:41.152Z] 
+[debug] [2020-05-07T16:52:41.159Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-07T16:52:41.159Z] > authorizing via signed-in user
 [info] i  emulators: Starting emulators: functions
-[debug] [2020-05-07T11:07:21.381Z] [hub] writing locator at /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/hub-agromall-d819e.json
+[debug] [2020-05-07T16:52:41.221Z] [hub] writing locator at /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/hub-agromall-d819e.json
 [info] ✔  hub: emulator hub started at http://localhost:4400
 [info] ✔  functions: Using node@8 from host.
 [info] ✔  functions: functions emulator started at http://localhost:5001
 [info] i  functions: Watching "/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions" for Cloud Functions...
-[debug] [2020-05-07T11:07:21.661Z] [worker-pool] addWorker(~diagnostic~) 
-[debug] [2020-05-07T11:07:21.661Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
-[debug] [2020-05-07T11:07:21.662Z] [worker-pool] submitWork(triggerId=) 
-[debug] [2020-05-07T11:07:21.662Z] [worker-~diagnostic~-c98196b2-66ca-4649-92ee-b23e88c45083]: Assigning socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_22240.sock 
-[debug] [2020-05-07T11:07:21.663Z] [worker-~diagnostic~-c98196b2-66ca-4649-92ee-b23e88c45083]: BUSY 
-[debug] [2020-05-07T11:07:21.924Z] [runtime-status] [22240] Functions runtime initialized. {"cwd":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions","node_version":"8.16.2"} 
-[debug] [2020-05-07T11:07:21.925Z] [runtime-status] [22240] Disabled runtime features: undefined 
-[debug] [2020-05-07T11:07:21.927Z] [runtime-status] [22240] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:07:21.928Z] [runtime-status] [22240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:07:21.931Z] [runtime-status] [22240] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
-[debug] [2020-05-07T11:07:22.023Z] [runtime-status] [22240] Checked functions.config() {"config":{}} 
-[debug] [2020-05-07T11:07:22.024Z] [runtime-status] [22240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:07:22.025Z] [runtime-status] [22240] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:07:22.025Z] [runtime-status] [22240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:07:22.025Z] [runtime-status] [22240] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"}} 
-[warn] ⚠  TypeError: Cannot read property 'https' of undefined
-    at Object.<anonymous> (/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js:11:52)
+[debug] [2020-05-07T16:52:41.242Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-07T16:52:41.242Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-07T16:52:41.242Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-07T16:52:41.243Z] [worker-~diagnostic~-879b86db-7ed2-4238-8b17-3e48a057bec8]: Assigning socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_26736.sock 
+[debug] [2020-05-07T16:52:41.243Z] [worker-~diagnostic~-879b86db-7ed2-4238-8b17-3e48a057bec8]: BUSY 
+[debug] [2020-05-07T16:52:41.511Z] [runtime-status] [26736] Functions runtime initialized. {"cwd":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions","node_version":"8.16.2"} 
+[debug] [2020-05-07T16:52:41.512Z] [runtime-status] [26736] Disabled runtime features: undefined 
+[debug] [2020-05-07T16:52:41.514Z] [runtime-status] [26736] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-07T16:52:41.514Z] [runtime-status] [26736] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T16:52:41.518Z] [runtime-status] [26736] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-07T16:52:41.586Z] [runtime-status] [26736] Checked functions.config() {"config":{}} 
+[debug] [2020-05-07T16:52:41.587Z] [runtime-status] [26736] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T16:52:41.587Z] [runtime-status] [26736] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-07T16:52:41.588Z] [runtime-status] [26736] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T16:52:41.588Z] [runtime-status] [26736] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"}} 
+[info] ✔  functions[api]: http function initialized (http://localhost:5001/agromall-d819e/us-central1/api).
+[info] ✔  emulators: All emulators started, it is now safe to connect.
+[debug] [2020-05-07T16:52:41.845Z] [worker-~diagnostic~-879b86db-7ed2-4238-8b17-3e48a057bec8]: IDLE 
+[debug] [2020-05-07T16:53:30.444Z] File /Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js changed, reloading triggers 
+[debug] [2020-05-07T16:53:31.450Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-07T16:53:31.450Z] [worker-~diagnostic~-879b86db-7ed2-4238-8b17-3e48a057bec8]: FINISHING 
+[debug] [2020-05-07T16:53:31.460Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-07T16:53:31.461Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-07T16:53:31.461Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-07T16:53:31.461Z] [worker-~diagnostic~-e7051792-f90f-4b48-af3d-af80a5e4b60a]: Assigning socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_26790.sock 
+[debug] [2020-05-07T16:53:31.462Z] [worker-~diagnostic~-e7051792-f90f-4b48-af3d-af80a5e4b60a]: BUSY 
+[debug] [2020-05-07T16:53:31.464Z] [worker-~diagnostic~-879b86db-7ed2-4238-8b17-3e48a057bec8]: exited 
+[debug] [2020-05-07T16:53:31.464Z] [worker-~diagnostic~-879b86db-7ed2-4238-8b17-3e48a057bec8]: FINISHED 
+[debug] [2020-05-07T16:53:31.740Z] [runtime-status] [26790] Functions runtime initialized. {"cwd":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions","node_version":"8.16.2"} 
+[debug] [2020-05-07T16:53:31.742Z] [runtime-status] [26790] Disabled runtime features: undefined 
+[debug] [2020-05-07T16:53:31.743Z] [runtime-status] [26790] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-07T16:53:31.744Z] [runtime-status] [26790] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T16:53:31.748Z] [runtime-status] [26790] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-07T16:53:31.783Z] [runtime-status] [26790] Checked functions.config() {"config":{}} 
+[debug] [2020-05-07T16:53:31.784Z] [runtime-status] [26790] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T16:53:31.785Z] [runtime-status] [26790] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-07T16:53:31.785Z] [runtime-status] [26790] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T16:53:31.785Z] [runtime-status] [26790] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-07T16:53:31.862Z] [worker-~diagnostic~-e7051792-f90f-4b48-af3d-af80a5e4b60a]: IDLE 
+[debug] [2020-05-07T16:55:05.194Z] File /Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/crud.js changed, reloading triggers 
+[debug] [2020-05-07T16:55:06.194Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-07T16:55:06.194Z] [worker-~diagnostic~-e7051792-f90f-4b48-af3d-af80a5e4b60a]: FINISHING 
+[debug] [2020-05-07T16:55:06.195Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-07T16:55:06.199Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-07T16:55:06.199Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-07T16:55:06.199Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-07T16:55:06.200Z] [worker-~diagnostic~-632fcf2a-c1ac-4602-9507-7b33e86810ec]: Assigning socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_26820.sock 
+[debug] [2020-05-07T16:55:06.200Z] [worker-~diagnostic~-632fcf2a-c1ac-4602-9507-7b33e86810ec]: BUSY 
+[debug] [2020-05-07T16:55:06.201Z] [worker-~diagnostic~-e7051792-f90f-4b48-af3d-af80a5e4b60a]: exited 
+[debug] [2020-05-07T16:55:06.201Z] [worker-~diagnostic~-e7051792-f90f-4b48-af3d-af80a5e4b60a]: FINISHED 
+[debug] [2020-05-07T16:55:06.743Z] [runtime-status] [26820] Functions runtime initialized. {"cwd":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions","node_version":"8.16.2"} 
+[debug] [2020-05-07T16:55:06.745Z] [runtime-status] [26820] Disabled runtime features: undefined 
+[debug] [2020-05-07T16:55:06.748Z] [runtime-status] [26820] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-07T16:55:06.749Z] [runtime-status] [26820] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T16:55:06.754Z] [runtime-status] [26820] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-07T16:55:06.830Z] [runtime-status] [26820] Checked functions.config() {"config":{}} 
+[debug] [2020-05-07T16:55:06.831Z] [runtime-status] [26820] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T16:55:06.833Z] [runtime-status] [26820] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-07T16:55:06.833Z] [runtime-status] [26820] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T16:55:06.833Z] [runtime-status] [26820] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-07T16:55:06.983Z] [worker-~diagnostic~-632fcf2a-c1ac-4602-9507-7b33e86810ec]: IDLE 
+[debug] [2020-05-07T17:08:22.791Z] File /Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js changed, reloading triggers 
+[debug] [2020-05-07T17:08:23.798Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-07T17:08:23.799Z] [worker-~diagnostic~-632fcf2a-c1ac-4602-9507-7b33e86810ec]: FINISHING 
+[debug] [2020-05-07T17:08:23.799Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-07T17:08:23.808Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-07T17:08:23.808Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-07T17:08:23.808Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-07T17:08:23.809Z] [worker-~diagnostic~-42982285-1cdd-490f-b087-8a6c3f70c76f]: Assigning socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_27492.sock 
+[debug] [2020-05-07T17:08:23.809Z] [worker-~diagnostic~-42982285-1cdd-490f-b087-8a6c3f70c76f]: BUSY 
+[debug] [2020-05-07T17:08:23.811Z] [worker-~diagnostic~-632fcf2a-c1ac-4602-9507-7b33e86810ec]: exited 
+[debug] [2020-05-07T17:08:23.811Z] [worker-~diagnostic~-632fcf2a-c1ac-4602-9507-7b33e86810ec]: FINISHED 
+[debug] [2020-05-07T17:08:24.573Z] [runtime-status] [27492] Functions runtime initialized. {"cwd":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions","node_version":"8.16.2"} 
+[debug] [2020-05-07T17:08:24.575Z] [runtime-status] [27492] Disabled runtime features: undefined 
+[debug] [2020-05-07T17:08:24.580Z] [runtime-status] [27492] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-07T17:08:24.582Z] [runtime-status] [27492] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T17:08:24.587Z] [runtime-status] [27492] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-07T17:08:24.657Z] [runtime-status] [27492] Checked functions.config() {"config":{}} 
+[debug] [2020-05-07T17:08:24.658Z] [runtime-status] [27492] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T17:08:24.659Z] [runtime-status] [27492] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-07T17:08:24.659Z] [runtime-status] [27492] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T17:08:24.660Z] [runtime-status] [27492] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"}} 
+[warn] ⚠  Error: Cannot find module './authentication'
+    at Function.Module._resolveFilename (module.js:548:15)
+    at Function.Module._load (module.js:475:25)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js:11:46)
     at Module._compile (module.js:653:30)
     at Object.Module._extensions..js (module.js:664:10)
     at Module.load (module.js:566:32)
     at tryModuleLoad (module.js:506:12)
     at Function.Module._load (module.js:498:3)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-05-07T17:08:24.862Z] [worker-~diagnostic~-42982285-1cdd-490f-b087-8a6c3f70c76f]: exited 
+[debug] [2020-05-07T17:08:24.862Z] [worker-~diagnostic~-42982285-1cdd-490f-b087-8a6c3f70c76f]: FINISHED 
+[debug] [2020-05-07T17:08:27.019Z] File /Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js changed, reloading triggers 
+[debug] [2020-05-07T17:08:28.023Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 0 
+[debug] [2020-05-07T17:08:28.030Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-07T17:08:28.030Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-07T17:08:28.031Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-07T17:08:28.031Z] [worker-~diagnostic~-721b3713-99ba-49c0-b940-caab5fa69afb]: Assigning socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_27500.sock 
+[debug] [2020-05-07T17:08:28.031Z] [worker-~diagnostic~-721b3713-99ba-49c0-b940-caab5fa69afb]: BUSY 
+[debug] [2020-05-07T17:08:28.306Z] [runtime-status] [27500] Functions runtime initialized. {"cwd":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions","node_version":"8.16.2"} 
+[debug] [2020-05-07T17:08:28.307Z] [runtime-status] [27500] Disabled runtime features: undefined 
+[debug] [2020-05-07T17:08:28.309Z] [runtime-status] [27500] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-07T17:08:28.310Z] [runtime-status] [27500] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T17:08:28.314Z] [runtime-status] [27500] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-07T17:08:28.348Z] [runtime-status] [27500] Checked functions.config() {"config":{}} 
+[debug] [2020-05-07T17:08:28.349Z] [runtime-status] [27500] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T17:08:28.349Z] [runtime-status] [27500] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-07T17:08:28.349Z] [runtime-status] [27500] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T17:08:28.350Z] [runtime-status] [27500] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"}} 
+[warn] ⚠  Error: Cannot find module './authentication'
+    at Function.Module._resolveFilename (module.js:548:15)
+    at Function.Module._load (module.js:475:25)
     at Module.require (module.js:597:17)
     at require (internal/module.js:11:18)
-    at /Users/ezekielsaturday/.nvm/versions/node/v8.16.2/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:661:33
-    at Generator.next (<anonymous>)
+    at Object.<anonymous> (/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js:11:46)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
 [warn] ⚠  We were unable to load your functions code. (see above)
-[debug] [2020-05-07T11:07:22.046Z] [worker-~diagnostic~-c98196b2-66ca-4649-92ee-b23e88c45083]: exited 
-[debug] [2020-05-07T11:07:22.046Z] [worker-~diagnostic~-c98196b2-66ca-4649-92ee-b23e88c45083]: FINISHED 
-[debug] [2020-05-07T11:09:07.155Z] File /Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js changed, reloading triggers 
-[debug] [2020-05-07T11:09:08.165Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0 
-[debug] [2020-05-07T11:09:08.172Z] [worker-pool] addWorker(~diagnostic~) 
-[debug] [2020-05-07T11:09:08.173Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
-[debug] [2020-05-07T11:09:08.173Z] [worker-pool] submitWork(triggerId=) 
-[debug] [2020-05-07T11:09:08.173Z] [worker-~diagnostic~-087197a7-0906-4e30-976d-de5db48332b3]: Assigning socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_22326.sock 
-[debug] [2020-05-07T11:09:08.173Z] [worker-~diagnostic~-087197a7-0906-4e30-976d-de5db48332b3]: BUSY 
-[debug] [2020-05-07T11:09:08.803Z] [runtime-status] [22326] Functions runtime initialized. {"cwd":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions","node_version":"8.16.2"} 
-[debug] [2020-05-07T11:09:08.805Z] [runtime-status] [22326] Disabled runtime features: undefined 
-[debug] [2020-05-07T11:09:08.809Z] [runtime-status] [22326] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:09:08.810Z] [runtime-status] [22326] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:09:08.815Z] [runtime-status] [22326] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
-[debug] [2020-05-07T11:09:08.881Z] [runtime-status] [22326] Checked functions.config() {"config":{}} 
-[debug] [2020-05-07T11:09:08.882Z] [runtime-status] [22326] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:09:08.883Z] [runtime-status] [22326] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:09:08.883Z] [runtime-status] [22326] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:09:08.883Z] [runtime-status] [22326] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"}} 
-[info] ✔  functions[helloWorld]: http function initialized (http://localhost:5001/agromall-d819e/us-central1/helloWorld).
-[debug] [2020-05-07T11:09:08.887Z] [worker-~diagnostic~-087197a7-0906-4e30-976d-de5db48332b3]: IDLE 
-[debug] [2020-05-07T11:12:01.221Z] File /Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js changed, reloading triggers 
-[debug] [2020-05-07T11:12:02.225Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
-[debug] [2020-05-07T11:12:02.226Z] [worker-~diagnostic~-087197a7-0906-4e30-976d-de5db48332b3]: FINISHING 
-[debug] [2020-05-07T11:12:02.230Z] [worker-pool] addWorker(~diagnostic~) 
-[debug] [2020-05-07T11:12:02.230Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
-[debug] [2020-05-07T11:12:02.230Z] [worker-pool] submitWork(triggerId=) 
-[debug] [2020-05-07T11:12:02.230Z] [worker-~diagnostic~-18174d1b-2cf5-4c4c-b5ee-920abeb8fb1e]: Assigning socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_22355.sock 
-[debug] [2020-05-07T11:12:02.230Z] [worker-~diagnostic~-18174d1b-2cf5-4c4c-b5ee-920abeb8fb1e]: BUSY 
-[debug] [2020-05-07T11:12:02.231Z] [worker-~diagnostic~-087197a7-0906-4e30-976d-de5db48332b3]: exited 
-[debug] [2020-05-07T11:12:02.232Z] [worker-~diagnostic~-087197a7-0906-4e30-976d-de5db48332b3]: FINISHED 
-[debug] [2020-05-07T11:12:02.833Z] [runtime-status] [22355] Functions runtime initialized. {"cwd":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions","node_version":"8.16.2"} 
-[debug] [2020-05-07T11:12:02.835Z] [runtime-status] [22355] Disabled runtime features: undefined 
-[debug] [2020-05-07T11:12:02.837Z] [runtime-status] [22355] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:12:02.839Z] [runtime-status] [22355] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:12:02.844Z] [runtime-status] [22355] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
-[debug] [2020-05-07T11:12:02.920Z] [runtime-status] [22355] Checked functions.config() {"config":{}} 
-[debug] [2020-05-07T11:12:02.921Z] [runtime-status] [22355] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:12:02.922Z] [runtime-status] [22355] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:12:02.922Z] [runtime-status] [22355] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:12:02.923Z] [runtime-status] [22355] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"}} 
-[debug] [2020-05-07T11:12:03.101Z] [worker-~diagnostic~-18174d1b-2cf5-4c4c-b5ee-920abeb8fb1e]: IDLE 
-[debug] [2020-05-07T11:12:28.145Z] File /Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js changed, reloading triggers 
-[debug] [2020-05-07T11:12:29.149Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
-[debug] [2020-05-07T11:12:29.150Z] [worker-~diagnostic~-18174d1b-2cf5-4c4c-b5ee-920abeb8fb1e]: FINISHING 
-[debug] [2020-05-07T11:12:29.150Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
-[debug] [2020-05-07T11:12:29.154Z] [worker-pool] addWorker(~diagnostic~) 
-[debug] [2020-05-07T11:12:29.154Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
-[debug] [2020-05-07T11:12:29.154Z] [worker-pool] submitWork(triggerId=) 
-[debug] [2020-05-07T11:12:29.154Z] [worker-~diagnostic~-6d32addd-7f33-4061-945c-83f687f71956]: Assigning socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_22374.sock 
-[debug] [2020-05-07T11:12:29.155Z] [worker-~diagnostic~-6d32addd-7f33-4061-945c-83f687f71956]: BUSY 
-[debug] [2020-05-07T11:12:29.155Z] [worker-~diagnostic~-18174d1b-2cf5-4c4c-b5ee-920abeb8fb1e]: exited 
-[debug] [2020-05-07T11:12:29.156Z] [worker-~diagnostic~-18174d1b-2cf5-4c4c-b5ee-920abeb8fb1e]: FINISHED 
-[debug] [2020-05-07T11:12:29.461Z] [runtime-status] [22374] Functions runtime initialized. {"cwd":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions","node_version":"8.16.2"} 
-[debug] [2020-05-07T11:12:29.463Z] [runtime-status] [22374] Disabled runtime features: undefined 
-[debug] [2020-05-07T11:12:29.465Z] [runtime-status] [22374] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:12:29.466Z] [runtime-status] [22374] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:12:29.470Z] [runtime-status] [22374] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
-[debug] [2020-05-07T11:12:29.507Z] [runtime-status] [22374] Checked functions.config() {"config":{}} 
-[debug] [2020-05-07T11:12:29.508Z] [runtime-status] [22374] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:12:29.509Z] [runtime-status] [22374] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:12:29.509Z] [runtime-status] [22374] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:12:29.509Z] [runtime-status] [22374] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"}} 
-[info] ✔  functions[api]: http function initialized (http://localhost:5001/agromall-d819e/us-central1/api).
-[debug] [2020-05-07T11:12:29.586Z] [worker-~diagnostic~-6d32addd-7f33-4061-945c-83f687f71956]: IDLE 
-[debug] [2020-05-07T11:14:22.251Z] File /Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js changed, reloading triggers 
-[debug] [2020-05-07T11:14:23.253Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
-[debug] [2020-05-07T11:14:23.254Z] [worker-~diagnostic~-6d32addd-7f33-4061-945c-83f687f71956]: FINISHING 
-[debug] [2020-05-07T11:14:23.254Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
-[debug] [2020-05-07T11:14:23.258Z] [worker-pool] addWorker(~diagnostic~) 
-[debug] [2020-05-07T11:14:23.259Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
-[debug] [2020-05-07T11:14:23.261Z] [worker-pool] submitWork(triggerId=) 
-[debug] [2020-05-07T11:14:23.261Z] [worker-~diagnostic~-014a79e8-254a-4d0d-8e00-534063203323]: Assigning socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_22432.sock 
-[debug] [2020-05-07T11:14:23.261Z] [worker-~diagnostic~-014a79e8-254a-4d0d-8e00-534063203323]: BUSY 
-[debug] [2020-05-07T11:14:23.262Z] [worker-~diagnostic~-6d32addd-7f33-4061-945c-83f687f71956]: exited 
-[debug] [2020-05-07T11:14:23.262Z] [worker-~diagnostic~-6d32addd-7f33-4061-945c-83f687f71956]: FINISHED 
-[debug] [2020-05-07T11:14:23.861Z] [runtime-status] [22432] Functions runtime initialized. {"cwd":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions","node_version":"8.16.2"} 
-[debug] [2020-05-07T11:14:23.863Z] [runtime-status] [22432] Disabled runtime features: undefined 
-[debug] [2020-05-07T11:14:23.866Z] [runtime-status] [22432] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:14:23.868Z] [runtime-status] [22432] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:14:23.873Z] [runtime-status] [22432] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
-[debug] [2020-05-07T11:14:23.944Z] [runtime-status] [22432] Checked functions.config() {"config":{}} 
-[debug] [2020-05-07T11:14:23.945Z] [runtime-status] [22432] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:14:23.945Z] [runtime-status] [22432] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:14:23.946Z] [runtime-status] [22432] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:14:23.946Z] [runtime-status] [22432] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"}} 
-[debug] [2020-05-07T11:14:24.133Z] [worker-~diagnostic~-014a79e8-254a-4d0d-8e00-534063203323]: IDLE 
-[debug] [2020-05-07T11:14:24.352Z] File /Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js changed, reloading triggers 
-[debug] [2020-05-07T11:14:24.460Z] File /Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js changed, reloading triggers 
-[debug] [2020-05-07T11:14:25.465Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
-[debug] [2020-05-07T11:14:25.465Z] [worker-~diagnostic~-014a79e8-254a-4d0d-8e00-534063203323]: FINISHING 
-[debug] [2020-05-07T11:14:25.465Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
-[debug] [2020-05-07T11:14:25.469Z] [worker-pool] addWorker(~diagnostic~) 
-[debug] [2020-05-07T11:14:25.469Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
-[debug] [2020-05-07T11:14:25.469Z] [worker-pool] submitWork(triggerId=) 
-[debug] [2020-05-07T11:14:25.469Z] [worker-~diagnostic~-50985558-fa8d-4260-beaf-4e69f751a558]: Assigning socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_22444.sock 
-[debug] [2020-05-07T11:14:25.469Z] [worker-~diagnostic~-50985558-fa8d-4260-beaf-4e69f751a558]: BUSY 
-[debug] [2020-05-07T11:14:25.471Z] [worker-~diagnostic~-014a79e8-254a-4d0d-8e00-534063203323]: exited 
-[debug] [2020-05-07T11:14:25.471Z] [worker-~diagnostic~-014a79e8-254a-4d0d-8e00-534063203323]: FINISHED 
-[debug] [2020-05-07T11:14:25.757Z] [runtime-status] [22444] Functions runtime initialized. {"cwd":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions","node_version":"8.16.2"} 
-[debug] [2020-05-07T11:14:25.759Z] [runtime-status] [22444] Disabled runtime features: undefined 
-[debug] [2020-05-07T11:14:25.762Z] [runtime-status] [22444] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:14:25.762Z] [runtime-status] [22444] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:14:25.767Z] [runtime-status] [22444] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
-[debug] [2020-05-07T11:14:25.804Z] [runtime-status] [22444] Checked functions.config() {"config":{}} 
-[debug] [2020-05-07T11:14:25.805Z] [runtime-status] [22444] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:14:25.806Z] [runtime-status] [22444] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:14:25.806Z] [runtime-status] [22444] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:14:25.806Z] [runtime-status] [22444] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"}} 
-[debug] [2020-05-07T11:14:25.879Z] [worker-~diagnostic~-50985558-fa8d-4260-beaf-4e69f751a558]: IDLE 
-[debug] [2020-05-07T11:18:20.483Z] File /Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js changed, reloading triggers 
-[debug] [2020-05-07T11:18:21.488Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
-[debug] [2020-05-07T11:18:21.488Z] [worker-~diagnostic~-50985558-fa8d-4260-beaf-4e69f751a558]: FINISHING 
-[debug] [2020-05-07T11:18:21.490Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
-[debug] [2020-05-07T11:18:21.499Z] [worker-pool] addWorker(~diagnostic~) 
-[debug] [2020-05-07T11:18:21.500Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
-[debug] [2020-05-07T11:18:21.500Z] [worker-pool] submitWork(triggerId=) 
-[debug] [2020-05-07T11:18:21.500Z] [worker-~diagnostic~-7918125f-eea3-4997-a6c7-ebae132bb0fb]: Assigning socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_22562.sock 
-[debug] [2020-05-07T11:18:21.500Z] [worker-~diagnostic~-7918125f-eea3-4997-a6c7-ebae132bb0fb]: BUSY 
-[debug] [2020-05-07T11:18:21.502Z] [worker-~diagnostic~-50985558-fa8d-4260-beaf-4e69f751a558]: exited 
-[debug] [2020-05-07T11:18:21.503Z] [worker-~diagnostic~-50985558-fa8d-4260-beaf-4e69f751a558]: FINISHED 
-[debug] [2020-05-07T11:18:22.113Z] [runtime-status] [22562] Functions runtime initialized. {"cwd":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions","node_version":"8.16.2"} 
-[debug] [2020-05-07T11:18:22.115Z] [runtime-status] [22562] Disabled runtime features: undefined 
-[debug] [2020-05-07T11:18:22.118Z] [runtime-status] [22562] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:18:22.120Z] [runtime-status] [22562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:18:22.124Z] [runtime-status] [22562] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
-[debug] [2020-05-07T11:18:22.181Z] [runtime-status] [22562] Checked functions.config() {"config":{}} 
-[debug] [2020-05-07T11:18:22.181Z] [runtime-status] [22562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:18:22.182Z] [runtime-status] [22562] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:18:22.182Z] [runtime-status] [22562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:18:22.183Z] [runtime-status] [22562] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"}} 
-[debug] [2020-05-07T11:18:22.341Z] [worker-~diagnostic~-7918125f-eea3-4997-a6c7-ebae132bb0fb]: IDLE 
-[debug] [2020-05-07T11:18:34.942Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-05-07T11:18:34.943Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-05-07T11:18:34.944Z] Accepted request GET /agromall-d819e/us-central1/api --> api
-[debug] [2020-05-07T11:18:34.945Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
-[debug] [2020-05-07T11:18:34.950Z] [worker-pool] addWorker(api) 
-[debug] [2020-05-07T11:18:34.951Z] [worker-pool] Adding worker with key api, total=1 
-[debug] [2020-05-07T11:18:34.951Z] [worker-pool] submitWork(triggerId=api) 
-[debug] [2020-05-07T11:18:34.951Z] [worker-api-37dcbef5-db15-4996-b1f7-f642645714ec]: Assigning socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_22565.sock 
-[debug] [2020-05-07T11:18:34.951Z] [worker-api-37dcbef5-db15-4996-b1f7-f642645714ec]: BUSY 
-[debug] [2020-05-07T11:18:35.234Z] [runtime-status] [22565] Functions runtime initialized. {"cwd":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions","node_version":"8.16.2"} 
-[debug] [2020-05-07T11:18:35.236Z] [runtime-status] [22565] Disabled runtime features: undefined 
-[debug] [2020-05-07T11:18:35.237Z] [runtime-status] [22565] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:18:35.238Z] [runtime-status] [22565] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:18:35.241Z] [runtime-status] [22565] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
-[debug] [2020-05-07T11:18:35.279Z] [runtime-status] [22565] Checked functions.config() {"config":{}} 
-[debug] [2020-05-07T11:18:35.280Z] [runtime-status] [22565] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:18:35.280Z] [runtime-status] [22565] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:18:35.280Z] [runtime-status] [22565] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:18:35.281Z] [runtime-status] [22565] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"}} 
-[debug] [2020-05-07T11:18:35.360Z] [runtime-status] [22565] Trigger "api" has been found, beginning invocation! 
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-05-07T11:18:35.361Z] [runtime-status] [22565] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
-[debug] [2020-05-07T11:18:35.361Z] [runtime-status] [22565] Running api in mode HTTPS 
-[debug] [2020-05-07T11:18:35.366Z] [runtime-status] [22565] Attempting to listen to socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_22565.sock 
-[debug] [2020-05-07T11:18:35.372Z] [functions] Runtime ready! Sending request! 
-[debug] [2020-05-07T11:18:35.386Z] [runtime-status] [22565] Ephemeral server handling GET request 
-[debug] [2020-05-07T11:18:35.392Z] [runtime-status] [22565] Ephemeral server survived. 
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-05-07T11:18:35.394Z] [worker-api-37dcbef5-db15-4996-b1f7-f642645714ec]: IDLE 
-[debug] [2020-05-07T11:18:35.394Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2020-05-07T11:18:43.775Z] File /Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js changed, reloading triggers 
-[debug] [2020-05-07T11:18:44.778Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
-[debug] [2020-05-07T11:18:44.779Z] [worker-~diagnostic~-7918125f-eea3-4997-a6c7-ebae132bb0fb]: FINISHING 
-[debug] [2020-05-07T11:18:44.779Z] [worker-pool] Shutting down IDLE worker (api) 
-[debug] [2020-05-07T11:18:44.779Z] [worker-api-37dcbef5-db15-4996-b1f7-f642645714ec]: FINISHING 
-[debug] [2020-05-07T11:18:44.786Z] [worker-pool] addWorker(~diagnostic~) 
-[debug] [2020-05-07T11:18:44.787Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
-[debug] [2020-05-07T11:18:44.787Z] [worker-pool] submitWork(triggerId=) 
-[debug] [2020-05-07T11:18:44.787Z] [worker-~diagnostic~-28781bcd-7eda-48c4-96dc-1f950d8cc225]: Assigning socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_22575.sock 
-[debug] [2020-05-07T11:18:44.787Z] [worker-~diagnostic~-28781bcd-7eda-48c4-96dc-1f950d8cc225]: BUSY 
-[debug] [2020-05-07T11:18:44.789Z] [worker-~diagnostic~-7918125f-eea3-4997-a6c7-ebae132bb0fb]: exited 
-[debug] [2020-05-07T11:18:44.789Z] [worker-~diagnostic~-7918125f-eea3-4997-a6c7-ebae132bb0fb]: FINISHED 
-[debug] [2020-05-07T11:18:44.789Z] [worker-api-37dcbef5-db15-4996-b1f7-f642645714ec]: exited 
-[debug] [2020-05-07T11:18:44.789Z] [worker-api-37dcbef5-db15-4996-b1f7-f642645714ec]: FINISHED 
-[debug] [2020-05-07T11:18:45.064Z] [runtime-status] [22575] Functions runtime initialized. {"cwd":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions","node_version":"8.16.2"} 
-[debug] [2020-05-07T11:18:45.065Z] [runtime-status] [22575] Disabled runtime features: undefined 
-[debug] [2020-05-07T11:18:45.067Z] [runtime-status] [22575] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:18:45.068Z] [runtime-status] [22575] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:18:45.073Z] [runtime-status] [22575] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
-[debug] [2020-05-07T11:18:45.108Z] [runtime-status] [22575] Checked functions.config() {"config":{}} 
-[debug] [2020-05-07T11:18:45.109Z] [runtime-status] [22575] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:18:45.110Z] [runtime-status] [22575] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:18:45.110Z] [runtime-status] [22575] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:18:45.110Z] [runtime-status] [22575] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"}} 
-[debug] [2020-05-07T11:18:45.183Z] [worker-~diagnostic~-28781bcd-7eda-48c4-96dc-1f950d8cc225]: IDLE 
-[debug] [2020-05-07T11:18:45.722Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-05-07T11:18:45.723Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-05-07T11:18:45.723Z] Accepted request GET /agromall-d819e/us-central1/api --> api
-[debug] [2020-05-07T11:18:45.723Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
-[debug] [2020-05-07T11:18:45.723Z] [worker-pool] Cleaned up workers for api: 1 --> 0 
-[debug] [2020-05-07T11:18:45.727Z] [worker-pool] addWorker(api) 
-[debug] [2020-05-07T11:18:45.728Z] [worker-pool] Adding worker with key api, total=1 
-[debug] [2020-05-07T11:18:45.728Z] [worker-pool] submitWork(triggerId=api) 
-[debug] [2020-05-07T11:18:45.728Z] [worker-api-bceac4f3-e316-43e5-ba8b-4cf3485d4bdf]: Assigning socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_22576.sock 
-[debug] [2020-05-07T11:18:45.728Z] [worker-api-bceac4f3-e316-43e5-ba8b-4cf3485d4bdf]: BUSY 
-[debug] [2020-05-07T11:18:46.010Z] [runtime-status] [22576] Functions runtime initialized. {"cwd":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions","node_version":"8.16.2"} 
-[debug] [2020-05-07T11:18:46.012Z] [runtime-status] [22576] Disabled runtime features: undefined 
-[debug] [2020-05-07T11:18:46.013Z] [runtime-status] [22576] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:18:46.014Z] [runtime-status] [22576] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:18:46.018Z] [runtime-status] [22576] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
-[debug] [2020-05-07T11:18:46.057Z] [runtime-status] [22576] Checked functions.config() {"config":{}} 
-[debug] [2020-05-07T11:18:46.058Z] [runtime-status] [22576] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:18:46.059Z] [runtime-status] [22576] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-05-07T11:18:46.059Z] [runtime-status] [22576] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-05-07T11:18:46.059Z] [runtime-status] [22576] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"}} 
-[debug] [2020-05-07T11:18:46.138Z] [runtime-status] [22576] Trigger "api" has been found, beginning invocation! 
-[info] i  functions: Beginning execution of "api"
-[debug] [2020-05-07T11:18:46.138Z] [runtime-status] [22576] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"} 
-[debug] [2020-05-07T11:18:46.138Z] [runtime-status] [22576] Running api in mode HTTPS 
-[debug] [2020-05-07T11:18:46.143Z] [runtime-status] [22576] Attempting to listen to socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_22576.sock 
-[debug] [2020-05-07T11:18:46.146Z] [functions] Runtime ready! Sending request! 
-[debug] [2020-05-07T11:18:46.163Z] [runtime-status] [22576] Ephemeral server handling GET request 
-[debug] [2020-05-07T11:18:46.171Z] [runtime-status] [22576] Ephemeral server survived. 
-[info] i  functions: Finished "api" in ~1s
-[debug] [2020-05-07T11:18:46.173Z] [worker-api-bceac4f3-e316-43e5-ba8b-4cf3485d4bdf]: IDLE 
-[debug] [2020-05-07T11:18:46.173Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-07T17:08:28.441Z] [worker-~diagnostic~-721b3713-99ba-49c0-b940-caab5fa69afb]: exited 
+[debug] [2020-05-07T17:08:28.442Z] [worker-~diagnostic~-721b3713-99ba-49c0-b940-caab5fa69afb]: FINISHED 
+[debug] [2020-05-07T17:10:45.355Z] File /Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js changed, reloading triggers 
+[debug] [2020-05-07T17:10:46.357Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0 
+[debug] [2020-05-07T17:10:46.360Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-07T17:10:46.360Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-07T17:10:46.360Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-07T17:10:46.360Z] [worker-~diagnostic~-7b5e6134-4115-42b2-bcb5-a767f01a73e5]: Assigning socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_27561.sock 
+[debug] [2020-05-07T17:10:46.360Z] [worker-~diagnostic~-7b5e6134-4115-42b2-bcb5-a767f01a73e5]: BUSY 
+[debug] [2020-05-07T17:10:46.894Z] [runtime-status] [27561] Functions runtime initialized. {"cwd":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions","node_version":"8.16.2"} 
+[debug] [2020-05-07T17:10:46.898Z] [runtime-status] [27561] Disabled runtime features: undefined 
+[debug] [2020-05-07T17:10:46.901Z] [runtime-status] [27561] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-07T17:10:46.904Z] [runtime-status] [27561] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T17:10:46.912Z] [runtime-status] [27561] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-07T17:10:46.978Z] [runtime-status] [27561] Checked functions.config() {"config":{}} 
+[debug] [2020-05-07T17:10:46.979Z] [runtime-status] [27561] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T17:10:46.980Z] [runtime-status] [27561] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-07T17:10:46.980Z] [runtime-status] [27561] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T17:10:46.980Z] [runtime-status] [27561] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"}} 
+[warn] ⚠  Error: Cannot find module './authentication'
+    at Function.Module._resolveFilename (module.js:548:15)
+    at Function.Module._load (module.js:475:25)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js:11:46)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-05-07T17:10:47.172Z] [worker-~diagnostic~-7b5e6134-4115-42b2-bcb5-a767f01a73e5]: exited 
+[debug] [2020-05-07T17:10:47.172Z] [worker-~diagnostic~-7b5e6134-4115-42b2-bcb5-a767f01a73e5]: FINISHED 
+[debug] [2020-05-07T17:10:58.990Z] File /Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js changed, reloading triggers 
+[debug] [2020-05-07T17:10:59.994Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0 
+[debug] [2020-05-07T17:11:00.000Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-07T17:11:00.000Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-07T17:11:00.000Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-07T17:11:00.001Z] [worker-~diagnostic~-aa0f3d46-0282-482c-8c3a-a8e5935fe52f]: Assigning socketPath: /var/folders/fp/dfkcdtnx03x2_qs18frh368r0000gp/T/fire_emu_27567.sock 
+[debug] [2020-05-07T17:11:00.001Z] [worker-~diagnostic~-aa0f3d46-0282-482c-8c3a-a8e5935fe52f]: BUSY 
+[debug] [2020-05-07T17:11:00.276Z] [runtime-status] [27567] Functions runtime initialized. {"cwd":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions","node_version":"8.16.2"} 
+[debug] [2020-05-07T17:11:00.278Z] [runtime-status] [27567] Disabled runtime features: undefined 
+[debug] [2020-05-07T17:11:00.279Z] [runtime-status] [27567] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-07T17:11:00.280Z] [runtime-status] [27567] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T17:11:00.284Z] [runtime-status] [27567] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-07T17:11:00.320Z] [runtime-status] [27567] Checked functions.config() {"config":{}} 
+[debug] [2020-05-07T17:11:00.321Z] [runtime-status] [27567] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T17:11:00.321Z] [runtime-status] [27567] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-07T17:11:00.322Z] [runtime-status] [27567] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-07T17:11:00.322Z] [runtime-status] [27567] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.0","resolution":"/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/node_modules/firebase-admin/lib/index.js"}} 
+[warn] ⚠  Error: Cannot find module './authentication'
+    at Function.Module._resolveFilename (module.js:548:15)
+    at Function.Module._load (module.js:475:25)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/Users/ezekielsaturday/Documents/projects/agromall-food-requests/server/dist/functions/index.js:11:46)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-05-07T17:11:00.412Z] [worker-~diagnostic~-aa0f3d46-0282-482c-8c3a-a8e5935fe52f]: exited 
+[debug] [2020-05-07T17:11:00.413Z] [worker-~diagnostic~-aa0f3d46-0282-482c-8c3a-a8e5935fe52f]: FINISHED 

@@ -4,7 +4,13 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
 var functions = _interopRequireWildcard(require("firebase-functions"));
 
+var auth = functions;
+
 var _express = _interopRequireDefault(require("express"));
+
+var _authentication = _interopRequireDefault(require("./authentication"));
+
+var _index = _interopRequireDefault(require("./admin/index"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -15,8 +21,19 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var app = (0, _express["default"])();
 app.get("/", function (req, res) {
   res.send("HELLO DORO");
-}); // // Create and Deploy Your First Cloud Functions
+});
+var adminroutes = Object.keys(_index["default"]);
+
+for (var ix = 0; ix < adminroutes.length; ix++) {
+  var controller = _index["default"][adminroutes[ix]]({
+    Auth: _authentication["default"]
+  });
+
+  app.use("/admin/".concat(adminroutes[ix]), controller);
+} // app.use('/admin', )
+// // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
 //
+
 
 exports.api = functions.https.onRequest(app);
