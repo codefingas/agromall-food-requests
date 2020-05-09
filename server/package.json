@@ -8,9 +8,9 @@
     "start": "npm run shell",
     "watch": "babel --watch src --out-dir dist --source-maps inline --copy-files",
     "build": "babel --presets=@babel/preset-env src --out-dir dist --source-maps inline --copy-files",
-    "deploy": "firebase deploy --only functions",
+    "deploy": "yarn clean && yarn build && cd dist &&  firebase use agromall-d819e; firebase deploy --only functions",
     "logs": "firebase functions:log",
-    "clean": "rm -rf 'dist/functions'",
+    "clean": "rm -rf dist/functions",
     "watch-funcs": "babel --presets=@babel/preset-env  --verbose -w src/functions --out-dir dist/functions"
   },
   "engines": {
@@ -20,11 +20,17 @@
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
+    "@typescript-eslint/parser": "^2.31.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "firebase": "^7.14.3",
     "firebase-admin": "^8.10.0",
-    "firebase-functions": "^3.6.1"
+    "firebase-functions": "^3.6.1",
+    "typescript": "^3.8.3"
   },
   "devDependencies": {
-    "eslint": "^5.12.0",
+    "eslint": "^6.8.0",
     "eslint-plugin-promise": "^4.0.1",
     "firebase-functions-test": "^0.2.0"
   },

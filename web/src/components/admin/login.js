@@ -1,13 +1,25 @@
-import React from "react";
-
-
+import React, { useState, useCallback } from "react";
+import { connect } from "react-redux";
 
 const Login = (props) => {
-    console.log("PROPS IN LOGIN PAGE", props);
+  console.log("PROPS IN LOGIN PAGE", props);
+  const { dispatch } = props;
+  const [data, setData] = useState({});
+  const [loading, isLoading] = useState(false);
 
-    const adminLogin = () => {
-        props.history.push("/"); //redirecting
-    };
+  const adminLogin = () => {
+    isLoading(true);
+    dispatch({type: 'ADMIN_LOGIN', data: data});
+
+    // props.history.push("/"); //redirecting
+  };
+
+  const inputValue = useCallback(({ target }) => {
+    setData((prevData) => ({
+      ...prevData,
+      [target.type]: target.value,
+    }));
+  }, []);
 
   return (
     <div className="valign-wrapper">
@@ -19,25 +31,31 @@ const Login = (props) => {
                 <h4 className="card-title center-align">Admin Login</h4>
                 <div className="row">
                   <div className="input-field col s12">
-                    <input id="email" type="email" />
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      onKeyUp={inputValue}
+                    />
                     <label htmlFor="email">Email</label>
                   </div>
                 </div>
                 <div className="row">
                   <div className="input-field col s12">
-                    <input id="password" type="password"/>
+                    <input id="password" type="password" onKeyUp={inputValue} />
                     <label htmlFor="password">Password</label>
                   </div>
                 </div>
               </div>
               <div className="card-action center-align">
                 <button
-                  className="btn btn-block waves-effect wave-light"
+                  className={`btn btn-block waves-effect wave-light ${loading ? 'disabled' : ''}`}
                   style={{
                     backgroundColor: "#a3b745",
                     width: "100%",
                   }}
                   onClick={adminLogin}
+                  
                 >
                   Login
                 </button>
@@ -50,4 +68,12 @@ const Login = (props) => {
   );
 };
 
-export default Login;
+const MapStateToProps = (state) => {
+  return { state };
+};
+
+const MapDispathToProps = (dispatch) => {
+  return { dispatch };
+};
+
+export default connect(MapStateToProps, MapDispathToProps)(Login);
