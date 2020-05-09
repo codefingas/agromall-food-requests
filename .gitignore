@@ -2,7 +2,10 @@ web/node_modules
 web/.env
 server/node_modules
 server/dist/node_modules
-server/src/node_module'
+server/src/node_module
 server/dist/funtions/node_modules
 server/src/funtions/node_modules
 server/serviceAccountKey.json
+server/src/functions/serviceAccountKey.json
+server/dist/functions/serviceAccountKey.json
+server/dist

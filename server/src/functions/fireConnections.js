@@ -1,6 +1,6 @@
 import * as fireadmin from "firebase-admin";
-import firebase from 'firebase';
-import serviceAccount from "../../serviceAccountKey.json";
+// import firebase from 'firebase';
+import serviceAccount from "./serviceAccountKey";
 
 fireadmin.initializeApp({
   credential: fireadmin.credential.cert(serviceAccount),
