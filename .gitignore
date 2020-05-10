@@ -9,3 +9,5 @@ server/serviceAccountKey.json
 server/src/functions/serviceAccountKey.json
 server/dist/functions/serviceAccountKey.json
 server/dist
+server/src/functions/runtimeconfig.json
+server/dist/functions/runtimeconfig.json

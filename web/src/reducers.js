@@ -1,7 +1,22 @@
 import axios from "axios";
+import * as firebase from "firebase/app";
+import "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_APPID
+};
+
+
+firebase.initializeApp(firebaseConfig);
 
 const initialState = {
-    isAdmin: false
+  isAdmin: false,
 };
 
 const url = `http://localhost:5001/agromall-d819e/us-central1/api`;
@@ -12,31 +27,25 @@ const AgroReducer = async (state = initialState, action) => {
       axios
         .post(`${url}/admin/login`, action.data)
         .then((resp) => {
-            console.log("RESPONSE FROM SERVER", resp);
-            if (resp.status === 200) {
-                return {
-                    ...state,
-                    ...resp.data,
-                    isAdmin: true,
-
-                }
-            } else if (resp.status === 401) {
-                console.log("THE USER DATA", resp);
-                return {
-                    ...state,
-                    ...resp.data,
-                    isAdmin: false,
-
-                }
-            } else {
-                return state;
-            }
+        //   console.log("RESPONSE FROM SERVER", resp);
+            return {
+              ...state,
+              ...resp.data,
+              isAdmin: true,
+            };
         })
-        .catch((err) => console.log("ERROR FROM POST", err));
+        .catch((err) => {
+            // console.log("THE USER DATA", err);
+            return {
+              ...state,
+              error : err,
+              isAdmin: false,
+            };
+        });
 
       break;
-      default :
-        return state;
+    default:
+      return state;
   }
 
   return state;
