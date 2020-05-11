@@ -1,7 +1,7 @@
 import React from "react";
 
 const organize = (props) => {
-  const {entities} = props;
+  const { entities } = props;
 
   return (
     <div className="container">
@@ -24,7 +24,23 @@ const organize = (props) => {
 
       <hr />
       <div className="row">
-
+        {props.entities.map((entity) => (
+          <div key={entity.name} className="col s12 m3">
+            <div className="card horizontal">
+              <div className="card-stacked">
+                <div className="card-content">
+                  <div className="card-title">{entity.name}</div>
+                  <p>
+                  
+                  </p>
+                </div>
+                <div className="card-action right-align">
+                  <a href={`/admin/${entity.name.toLowerCase()}`}>Edit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
