@@ -11,11 +11,12 @@ class Orm {
     return Promise.resolve(
       Auth.getUserByEmail(email)
         .then((resp) => {
-          const data = resp.toJSON();
-          delete data.providerData[0]
-          if (password !== data.providerData[0].providerId) {
+          const data = resp.toJSON(),
+                [value] = data.providerData;
+          if (password !== value.providerId) {
             return { status: 401, data: { msg: "Incorrect Email/Password" } };
           } else {
+            delete data.providerData;
             return { status: 200, data };
           }
         })
@@ -23,6 +24,10 @@ class Orm {
           return { status: 401, data: err };
         })
     );
+  }
+
+  create() {
+    
   }
 }
 

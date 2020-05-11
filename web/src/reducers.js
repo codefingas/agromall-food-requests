@@ -9,14 +9,15 @@ const firebaseConfig = {
   projectId: process.env.REACT_APP_PROJECTID,
   storageBucket: process.env.REACT_APP_STORAGEBUCKET,
   messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
-  appId: process.env.REACT_APP_APPID
+  appId: process.env.REACT_APP_APPID,
 };
-
 
 firebase.initializeApp(firebaseConfig);
 
 const initialState = {
   isAdmin: false,
+  entities : [{name: "Markets",
+data: [ ]}, {name: "Categories"}]
 };
 
 const url = `http://localhost:5001/agromall-d819e/us-central1/api`;
@@ -24,25 +25,17 @@ const url = `http://localhost:5001/agromall-d819e/us-central1/api`;
 const AgroReducer = async (state = initialState, action) => {
   switch (action.type) {
     case "ADMIN_LOGIN":
-      axios
-        .post(`${url}/admin/login`, action.data)
-        .then((resp) => {
-        //   console.log("RESPONSE FROM SERVER", resp);
-            return {
-              ...state,
-              ...resp.data,
-              isAdmin: true,
-            };
-        })
+      const { email, password } = action.data;
+      console.log("THE FIREBASE", action.data);
+      firebase
+        .auth()
+        .signInWithEmailAndPassword(email, password)
         .catch((err) => {
-            // console.log("THE USER DATA", err);
-            return {
-              ...state,
-              error : err,
-              isAdmin: false,
-            };
+          console.log("ERROR WHILE SIGNING IN", err);
         });
-
+      break;
+    case "SIGN_OUT":
+      firebase.auth().signOut();
       break;
     default:
       return state;

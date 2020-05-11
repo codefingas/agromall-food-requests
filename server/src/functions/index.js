@@ -5,7 +5,6 @@ import cors from "cors";
 import Orm from './Orm';
 import admin from "./admin/index";
 
-
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors({ origin: true }));

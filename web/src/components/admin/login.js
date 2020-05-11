@@ -1,8 +1,9 @@
 import React, { useState, useCallback, useEffect } from "react";
 import firebase from "firebase";
 import { connect } from "react-redux";
+import LandingPage from "./Resources/adminhome";
 
-const Login = (props) => {
+const SignIn = (props) => {
   const { dispatch } = props;
   const [data, setData] = useState({});
   const [loading, isLoading] = useState(false);
@@ -10,14 +11,6 @@ const Login = (props) => {
     alertMsg: "Incorrect Email/Password",
     showAlrt: false,
   });
-  const { isAdmin } = props.state;
-
-  const adminLogin = async () => {
-    isLoading(true);
-    dispatch({ type: "ADMIN_LOGIN", data: data });
-
-     
-  };
 
   const inputValue = useCallback(({ target }) => {
     setData((prevData) => ({
@@ -26,22 +19,25 @@ const Login = (props) => {
     }));
   }, []);
 
-  React.useEffect(() => {
-    firebase.auth().onAuthStateChanged(function (user) {
-      if (user) {
-        props.history.push("/admin"); //redirecting
-        // ...
-      } else {
+  const adminLogin = async () => {
+    isLoading(true);
+    // props.dispatch({ type: "ADMIN_LOGIN", data: data });
+    const { email, password } = data;
+    await firebase
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .catch((err) => {
         setAlert((prevAlrt) => ({
           ...prevAlrt,
-          showAlert: true,
+          showAlrt: true,
         }));
-      }
-    });
-  }, []);
+
+        isLoading(false);
+      });
+  };
 
   return (
-    <div className="valign-wrapper">
+    <div className={props.loggedIn ? "hide valign-wrapper" : "valign-wrapper"}>
       <div className="container">
         <div className="row">
           <div className="col s12 m6 offset-m3">
@@ -73,7 +69,9 @@ const Login = (props) => {
 
                   <p
                     className={
-                      alert.showAlrt ? "center-align" : "hide center-align"
+                      alert.showAlrt
+                        ? "center-align red-text"
+                        : "hide center-align"
                     }
                   >
                     {alert.alertMsg}
@@ -102,8 +100,39 @@ const Login = (props) => {
   );
 };
 
+const Login = (props) => {
+  const [loggedIn, isLoggedIn] = useState(false);
+  const [entities, setEntity] = React.useState({});
+
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        isLoggedIn(true);
+      } else {
+        isLoggedIn(false);
+      }
+    });
+  }, []);
+
+  useEffect(() => {
+    Promise.resolve(props.state).then((resp) => setEntity(resp.entities));
+  }, []);
+
+  return (
+    <React.Fragment>
+      {loggedIn ? (
+        <LandingPage entities={entities} {...props} />
+      ) : (
+        <SignIn loggedIn={loggedIn} {...props} />
+      )}
+    </React.Fragment>
+  );
+};
+
 const MapStateToProps = (state) => {
-  return { state };
+  return {
+    state,
+  };
 };
 
 const MapDispathToProps = (dispatch) => {

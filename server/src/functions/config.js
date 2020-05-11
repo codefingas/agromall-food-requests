@@ -33,4 +33,6 @@ const config = variablesNames.reduce((acc, value, index) => {
   return acc;
 }, {});
 
+
+
 export default config;
