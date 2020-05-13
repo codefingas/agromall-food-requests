@@ -1,6 +1,6 @@
 import Firefeatures from "./fireConnections";
 
-const { Auth } = Firefeatures;
+const { Auth, Firedb } = Firefeatures;
 
 class Orm {
   constructor(name) {
@@ -26,8 +26,10 @@ class Orm {
     );
   }
 
-  create() {
-    
+  create(collection, data) {
+    let docRef =  Firedb.collection(collection).doc();
+    docRef.set(data);
+
   }
 }
 

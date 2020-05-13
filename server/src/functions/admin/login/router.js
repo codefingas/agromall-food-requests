@@ -8,6 +8,10 @@ const adminRoute = ({req, res, Orm}) => {
     controller.login(req, res, Methods);
   });
 
+  router.post("/categories", (req, res) => {
+    controller.create(req, res, new Orm('categories'));
+  })
+
   return router;
 };
 
