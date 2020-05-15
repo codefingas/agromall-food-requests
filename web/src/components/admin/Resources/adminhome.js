@@ -35,7 +35,7 @@ const organize = (props) => {
                   </p>
                 </div>
                 <div className="card-action right-align">
-                  <a href={`/admin/${entity.name.toLowerCase()}`}>Edit</a>
+                  <a href={`/admin/${entity.name.toLowerCase()}`}>View</a>
                 </div>
               </div>
             </div>

@@ -6,9 +6,6 @@ const controller = () => ({
         return res.status(user.status).json(user.data);
     }).catch((err) => err);
   },
-  create: (req, res, {create}) => {
-    console.log("REQ IN BACKEND", req.body);
-  }
   
 });
 

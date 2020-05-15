@@ -6,15 +6,22 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "./index.css";
 import { createStore, applyMiddleware } from "redux";
+import createSagaMiddleware from "redux-saga";
 import { Provider } from "react-redux";
-import thunk from 'redux-thunk';
 import reducer from "./reducers";
+import appSaga from "./saga";
 
-const store = createStore(reducer, applyMiddleware(thunk));
-
+const sagaMiddleware = createSagaMiddleware();
+const store = createStore(reducer, applyMiddleware(sagaMiddleware));
+sagaMiddleware.run(appSaga);
 // fix for the footer
 // https://medium.com/@stefanmaretic/react-sticky-footer-f842d5fbd68
 
-ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById("root"));
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
+);
 
 serviceWorker.unregister();
