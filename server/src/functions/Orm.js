@@ -26,9 +26,9 @@ class Orm {
     );
   }
 
-  create(collection, data) {
-    let docRef =  Firedb.collection(collection).doc();
-    docRef.set(data);
+  create(data) {
+    let docRef =  Firedb.collection(this.name).doc();
+    return Promise.resolve(docRef.set(data)).then(res => res).catch(err => err);
 
   }
 }

@@ -1,7 +1,9 @@
 /* eslint-disable promise/catch-or-return */
 const controller = () => ({
-    create: (req, res, {create}) => {
+    create: async (req, res, {create}) => {
         console.log("THE REQUEST HERE", req.body);
+          return create(req.body);
+            // console.log("SUCCESSFULLY CREATED ITEM", item);
     }
     
   });
